@@ -1,21 +1,10 @@
-import { Html, Head, Main, NextScript } from "next/document";
-import { Montserrat, Montserrat_Underline } from "next/font/google";
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-});
-
-const montserratUnderline = Montserrat_Underline({
-  variable: "--font-montserrat-underline",
-  subsets: ["latin"],
-});
+import { Head, Html, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang='en'>
       <Head />
-      <body className="font-montserrat">
+      <body>
         <Main />
         <NextScript />
       </body>
