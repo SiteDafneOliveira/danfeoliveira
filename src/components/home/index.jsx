@@ -1,7 +1,11 @@
-import React from "react"
+import Top from "./top";
 
 const HomePage = () => {
-  return <div>HomePage</div>
-}
+  return (
+    <div>
+      <Top />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;

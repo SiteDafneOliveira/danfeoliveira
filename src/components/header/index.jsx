@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { useState } from "react";
-import insta from "../../../assets/menu/insta_menu.svg";
-import logo from "../../../assets/menu/logo.svg";
-import open from "../../../assets/menu/menu.svg";
-import close from "../../../assets/menu/menu_fechar.svg";
-import whats from "../../../assets/menu/whats_menu.svg";
+import insta from "@/assets/menu/insta_menu.svg";
+import logo from "@/assets/menu/logo.svg";
+import open from "@/assets/menu/menu.svg";
+import close from "@/assets/menu/menu_fechar.svg";
+import whats from "@/assets/menu/whats_menu.svg";
 
 import { INSTA_LINK, WHATS_LINK } from "@/utils/links";
 import s from "./header.module.scss";

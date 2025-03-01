@@ -1,3 +1,4 @@
+import Header from "@/components/header";
 import UseTerms from "@/components/useTerms";
 import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
@@ -18,6 +19,7 @@ export default function Home() {
       <Head>
         <title>Termos de uso - Instituto Dafne Oliveira</title>
       </Head>
+      <Header />
       <UseTerms />
     </>
   );

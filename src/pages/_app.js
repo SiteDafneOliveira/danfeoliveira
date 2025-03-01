@@ -27,7 +27,6 @@ export default function App({ Component, pageProps }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className={`${montserrat.variable} ${montserratUnderline.variable}`}>
-        <Header />
         <Component {...pageProps} />
       </div>
     </>
