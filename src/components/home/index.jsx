@@ -1,3 +1,4 @@
+import Where from "./map";
 import Top from "./top";
 import Welcome from "./welcome";
 
@@ -6,6 +7,7 @@ const HomePage = () => {
     <div>
       <Top />
       <Welcome />
+      <Where />
     </div>
   );
 };
