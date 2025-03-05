@@ -26,7 +26,7 @@ const Doctor = () => {
         </p>
       </div>
       <div className={s.right}>
-        <Image src={doc} alt='doctor' />
+        <Image src={doc} alt='doctor' width={760} height={795} className={s.img} />
       </div>
     </div>
   );
