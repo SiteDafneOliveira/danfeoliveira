@@ -1,0 +1,42 @@
+.schedule {
+  background-image: url(../../../assets/bg_book.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 80px 0;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 2rem; //32px
+  line-height: 1.69; // 54px / 32px = 1.6875
+  text-align: center;
+  color: #ffffff;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bfab5c;
+  width: fit-content;
+  margin: 40px auto 0;
+
+  color: #fff;
+  font-size: 1rem; // 16px
+  line-height: 0.75; //12px / 16px = 0.75
+  padding: 1.25rem 2.5rem; // 20px 40px
+  border-radius: 32px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #f4eed4;
+    color: #cbb663;
+  }
+}
