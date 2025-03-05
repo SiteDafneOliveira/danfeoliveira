@@ -1,3 +1,4 @@
+import Doctor from "./doctor";
 import Institute from "./institute";
 import Where from "./map";
 import Top from "./top";
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Top />
       <Welcome />
       <Institute />
+      <Doctor />
       {/* <Where /> */}
     </div>
   );
