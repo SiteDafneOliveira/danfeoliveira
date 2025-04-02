@@ -10,10 +10,9 @@ const Top = () => {
       <Header />
       <div className={`container ${s.container}`}>
         <div className={s.left}>
-          <h1>Rumo a sua melhor versão</h1>
+          <h1>Nutrição que respeita seu biotipo, desperta sua potência e transforma sua vida com estratégia.</h1>
           <p>
-            Nosso maior objetivo é te ajudar a atingir o melhor de você mesmo,
-            de maneira estratégica, individualizada, equilibrada e saudável.
+          Feita com ciência, sensibilidade e precisão — para o seu corpo, sua rotina e a vida que você quer viver.
           </p>
           <a href={WHATS_LINK} target='_blank' rel='noreferrer'>
             AGENDE SUA CONSULTA
