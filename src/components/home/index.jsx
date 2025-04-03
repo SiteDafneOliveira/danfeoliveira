@@ -1,18 +1,20 @@
-import Doctor from "./doctor";
-import Institute from "./institute";
+import MappingMethod from "./mappingMethod";
 import Where from "./map";
 import Schedule from "./schedule";
+import Services from "./services";
 import Top from "./top";
 import Welcome from "./welcome";
+import Programs from "./programs";
 
 const HomePage = () => {
   return (
     <div>
       <Top />
       <Welcome />
-      <Institute />
-      <Doctor />
+      <MappingMethod />
+      <Services />
       <Where />
+      <Programs />
       <Schedule />
     </div>
   );

@@ -1,8 +1,8 @@
 import doc from "@/assets/dafne4.png";
 import Image from "next/image";
-import s from "./doctor.module.scss";
+import s from "./services.module.scss";
 
-const Doctor = () => {
+const Services = () => {
   return (
     <div className={`container ${s.doc}`}>
       <div className={s.left}>
@@ -38,4 +38,4 @@ const Doctor = () => {
   );
 };
 
-export default Doctor;
+export default Services;

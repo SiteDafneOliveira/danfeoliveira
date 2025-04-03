@@ -1,6 +1,6 @@
-import s from "./institute.module.scss";
+import s from "./mappingMethod.module.scss";
 
-const Institute = () => {
+const MappingMethod = () => {
   return (
     <div className={`${s.institute} container`}>
       <div>
@@ -20,4 +20,4 @@ const Institute = () => {
   );
 };
 
-export default Institute;
+export default MappingMethod;
