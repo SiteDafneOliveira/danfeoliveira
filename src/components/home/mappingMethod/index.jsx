@@ -2,7 +2,7 @@ import s from "./mappingMethod.module.scss";
 
 const MappingMethod = () => {
   return (
-    <div className={`${s.institute} container`}>
+    <div className={`${s.institute} container`} id="clinica">
       <div>
         <h2 className={s.title}>MÉTODO DE MAPEAMENTO DO SEU BIOTOPO</h2>
         <p className={s.content}>

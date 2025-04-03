@@ -15,7 +15,7 @@
   .right {
     max-width: 50%;
     margin-top: -80px;
-    
+
     & img {
       max-width: 100%;
       height: auto;
@@ -53,18 +53,26 @@
     gap: 10rem;
   } // @media only screen and (max-width : 1200px)
 
-  @media only screen and (max-width : 992px) {
+  @media only screen and (max-width: 992px) {
     .right {
       margin-right: -130px;
     }
     gap: 8rem;
-  }// @media only screen and (max-width : 992px)
 
-  @media only screen and (max-width : 768px) {
+    .left {
+      p {
+        margin-bottom: 40px;
+      }
+      a {
+        margin-bottom: 16px;
+      }
+    }
+  } // @media only screen and (max-width : 992px)
+
+  @media only screen and (max-width: 768px) {
     position: relative;
     width: 100%;
     min-height: 500px;
-
 
     .left {
       max-width: 100%;
@@ -102,11 +110,11 @@
         height: auto;
       }
     }
-  }// @media only screen and (max-width : 768px)
+  } // @media only screen and (max-width : 768px)
 
-  @media only screen and (max-width : 425px) {
+  @media only screen and (max-width: 425px) {
     .right {
       display: none;
     }
-  }// @media only screen and (max-width : 425px)
+  } // @media only screen and (max-width : 425px)
 }

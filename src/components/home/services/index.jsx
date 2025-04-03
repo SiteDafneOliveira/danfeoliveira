@@ -4,7 +4,7 @@ import s from "./services.module.scss";
 
 const Services = () => {
   return (
-    <div className={`container ${s.doc}`}>
+    <div className={`container ${s.doc}`} id="servicos">
       <div className={s.left}>
         <h2 className={s.title}>SERVIÇOS</h2>
         <p className={s.text}>

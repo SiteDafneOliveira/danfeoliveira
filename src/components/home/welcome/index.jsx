@@ -58,7 +58,7 @@ const Welcome = () => {
   }, []);
 
   return (
-    <div className={`${s.welcome} ${width > 768 ? "container" : ""}`}>
+    <div className={`${s.welcome} ${width > 768 ? "container" : ""}`} id="dr-dafne">
       <div
         className={`${s.content__container} ${width > 768 ? "" : "container"}`}
       >

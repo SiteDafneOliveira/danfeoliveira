@@ -4,7 +4,7 @@ import s from "./map.module.scss";
 
 const Where = () => {
   return (
-    <div className={s.map}>
+    <div className={s.map} id="como-chegar">
       <Map
         center={[-23.596756925795674, -46.67685436332249]}
         zoom={16}
