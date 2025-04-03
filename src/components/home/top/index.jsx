@@ -1,8 +1,9 @@
 import dafne from "@/assets/top/dafne.png";
+import Header from "@/components/header";
+import homeS from "@/styles/Home.module.css";
 import { WHATS_LINK } from "@/utils/links";
 import Image from "next/image";
 import s from "./top.module.scss";
-import Header from "@/components/header";
 
 const Top = () => {
   return (
@@ -10,11 +11,20 @@ const Top = () => {
       <Header />
       <div className={`container ${s.container}`}>
         <div className={s.left}>
-          <h1>Nutrição que respeita seu biotipo, desperta sua potência e transforma sua vida com estratégia.</h1>
+          <h1>
+            Nutrição que respeita seu biotipo, desperta sua potência e
+            transforma sua vida com estratégia.
+          </h1>
           <p>
-          Feita com ciência, sensibilidade e precisão — para o seu corpo, sua rotina e a vida que você quer viver.
+            Feita com ciência, sensibilidade e precisão — para o seu corpo, sua
+            rotina e a vida que você quer viver.
           </p>
-          <a href={WHATS_LINK} target='_blank' rel='noreferrer'>
+          <a
+            href={WHATS_LINK}
+            target='_blank'
+            rel='noreferrer'
+            className={homeS.btn}
+          >
             AGENDE SUA CONSULTA
           </a>
         </div>

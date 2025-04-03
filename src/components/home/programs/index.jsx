@@ -2,6 +2,7 @@ import definidas from "@/assets/programs/definidas.svg";
 import { NUTRI_HIGH_PERFORMANCE, PROGRAMA_DEFINIDAS } from "@/utils/links";
 import Image from "next/image";
 import s from "./programs.module.scss";
+import homeS from "@/styles/Home.module.css";
 
 const Programs = () => {
   return (
@@ -18,7 +19,7 @@ const Programs = () => {
             estratégico para quem deseja emagrecer, definir e retomar o
             autocuidado de maneira rápida e eficiente.
           </p>
-          <a href={PROGRAMA_DEFINIDAS} className={s.btn}>
+          <a href={PROGRAMA_DEFINIDAS} className={homeS.btn}>
             PROGRAMA DEFINIDAS
           </a>
         </div>
@@ -29,7 +30,7 @@ const Programs = () => {
             estratégico e se tornarem referência em resultado e fidelização,
             desenvolvi a mentoria NUTRI HIGH PERFORMANCE.
           </p>
-          <a href={NUTRI_HIGH_PERFORMANCE} className={s.btn}>
+          <a href={NUTRI_HIGH_PERFORMANCE} className={homeS.btn}>
             NUTRI HIGH PERFORMANCE
           </a>
         </div>
