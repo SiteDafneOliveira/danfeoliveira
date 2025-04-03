@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import "@/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Montserrat } from "next/font/google";
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <div className={`${montserrat.variable}`}>
         <Component {...pageProps} />
+        <Footer />
       </div>
     </>
   );
