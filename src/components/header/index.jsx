@@ -55,7 +55,7 @@ const Header = () => {
               onClick={() => setIsOpen(true)}
               className={`${s.button} ${s.open}`}
             >
-              <Image src={open} />
+              <Image src={open} alt='abrir menu' />
             </button>
           )}
           {isOpen && (
@@ -64,11 +64,11 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
                 className={`${s.button} ${s.close}`}
               >
-                <Image src={close} />
+                <Image src={close} alt='fechar menu' />
               </button>
               <ul className={s.list}>
-                {links.map(({ name, href }, index) => (
-                  <li key={index}>
+                {links.map(({ name, href }) => (
+                  <li key={name}>
                     <Link
                       href={isHome ? href : "/" + href}
                       onClick={() => {
@@ -93,10 +93,10 @@ const Header = () => {
                 </div>
                 <div className={`${s.menu__item} ${s.socials}`}>
                   <a href={INSTA_LINK} target='_blank' rel='noreferrer'>
-                    <Image src={insta} />
+                    <Image src={insta} alt='Instagram' />
                   </a>
                   <a href={WHATS_LINK} target='_blank' rel='noreferrer'>
-                    <Image src={whats} />
+                    <Image src={whats} alt="What's app" />
                   </a>
                 </div>
               </div>
