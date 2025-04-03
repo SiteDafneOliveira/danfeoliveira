@@ -3,14 +3,19 @@ import s from "./institute.module.scss";
 const Institute = () => {
   return (
     <div className={`${s.institute} container`}>
-      <p className={s.content}>
-        Lorem iipsum dolor sit amet, consectetur adipiscing elit. Quisque eu
-        arcu odio. Donec ac tortor luctus, efficitur turpis eu, dignissim orci.
-        Cras finibus nisl non velit tincidunt efficitur. Nullam eget auctor ex.
-        Fusce tempus metus tellus, ut interdum ante consequat non. Etiam quis
-        tristique nisi, eget ultricies velit. In malesuada sagittis massa, sed
-        hendrerit felis egestas tempor.{" "}
-      </p>
+      <div>
+        <h2 className={s.title}>MÉTODO DE MAPEAMENTO DO SEU BIOTOPO</h2>
+        <p className={s.content}>
+          Utilizo um método exclusivo de mapeamento de biotipo, que une ciência
+          e personalização para montar estratégias altamente eficazes. A partir
+          da análise de sintomas, exames laboratoriais, testes genéticos,
+          avaliação da composição corporal, junto com conhecimento em genética,
+          medicina chinesa, ayurveda, homotoxicologia e nutrição funcional
+          integrativa, construo planos nutricionais completos e realistas — com
+          alimentação, suplementação e estilo de vida alinhados ao seu
+          metabolismo, sua rotina e seus objetivos.
+        </p>
+      </div>
     </div>
   );
 };
