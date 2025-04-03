@@ -13,7 +13,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={` ${s.container}`}>
+    <div id="header" className={`${s.container}`}>
       <header className={`container ${s.header}`}>
         <Image
           src={logo}
