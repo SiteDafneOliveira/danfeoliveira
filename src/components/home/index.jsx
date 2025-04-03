@@ -1,10 +1,11 @@
-import MappingMethod from "./mappingMethod";
+import Instagram from "./instagram";
 import Where from "./map";
+import MappingMethod from "./mappingMethod";
+import Programs from "./programs";
 import Schedule from "./schedule";
 import Services from "./services";
 import Top from "./top";
 import Welcome from "./welcome";
-import Programs from "./programs";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Where />
       <Programs />
       <Schedule />
+      <Instagram />
     </div>
   );
 };
