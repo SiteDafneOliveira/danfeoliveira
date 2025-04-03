@@ -7,9 +7,36 @@ import Image from "next/image";
 import { useState } from "react";
 
 import { EMAIL, INSTA_LINK, PHONE, WHATS_LINK } from "@/utils/links";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import s from "./header.module.scss";
 
+const links = [
+  {
+    name: "Dra. Dafne Oliveira",
+    href: "#dr-dafne",
+  },
+  {
+    name: "A clínica",
+    href: "#clinica",
+  },
+  {
+    name: "Serviços",
+    href: "#servicos",
+  },
+  {
+    name: "Como chegar",
+    href: "#como-chegar",
+  },
+  {
+    name: "Agendar sua consulta",
+    href: "#agendar",
+  },
+];
+
 const Header = () => {
+  const route = usePathname();
+  const isHome = route === "/";
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -40,21 +67,18 @@ const Header = () => {
                 <Image src={close} />
               </button>
               <ul className={s.list}>
-                <li>
-                  <a href='#dr-dafne'>Dra. Dafne Oliveira</a>
-                </li>
-                <li>
-                  <a href='#clinica'>A clínica</a>
-                </li>
-                <li>
-                  <a href='#servicos'>Serviços</a>
-                </li>
-                <li>
-                  <a href='#como-chegar'>Como chegar</a>
-                </li>
-                <li>
-                  <a href='#agendar'>Agendar sua consulta</a>
-                </li>
+                {links.map(({ name, href }, index) => (
+                  <li key={index}>
+                    <Link
+                      href={isHome ? href : "/" + href}
+                      onClick={() => {
+                        setIsOpen(false);
+                      }}
+                    >
+                      {name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
               <div className={s.menu__bottom}>
                 <div className={s["menu__bottom--item"]}>

@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import Whats from "@/components/whats";
 import "@/styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Montserrat } from "next/font/google";
@@ -22,9 +23,10 @@ export default function App({ Component, pageProps }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className={`${montserrat.variable}`}>
-      <Header />
+        <Header />
         <Component {...pageProps} />
         <Footer />
+        <Whats />
       </div>
     </>
   );
