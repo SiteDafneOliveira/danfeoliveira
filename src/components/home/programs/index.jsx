@@ -1,8 +1,9 @@
 import definidas from "@/assets/programs/definidas.svg";
+import nutriHighPerformance from "@/assets/programs/nutri-high-performance.svg";
+import homeS from "@/styles/Home.module.css";
 import { NUTRI_HIGH_PERFORMANCE, PROGRAMA_DEFINIDAS } from "@/utils/links";
 import Image from "next/image";
 import s from "./programs.module.scss";
-import homeS from "@/styles/Home.module.css";
 
 const Programs = () => {
   return (
@@ -24,7 +25,14 @@ const Programs = () => {
           </a>
         </div>
         <div className={s.item}>
-          <p className={s.img}></p>
+          <p className={s.img}>
+            <Image
+              src={nutriHighPerformance}
+              alt='NUTRI HIGH PERFORMANCE'
+              width={70}
+              height={70}
+            />
+          </p>
           <p className={s.content}>
             E para nutricionistas que desejam aprender meu método de atendimento
             estratégico e se tornarem referência em resultado e fidelização,
