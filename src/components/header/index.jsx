@@ -39,6 +39,19 @@ const Header = () => {
   const isHome = route === "/";
   const [isOpen, setIsOpen] = useState(false);
 
+  
+  const scrollSmooth = (e) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute("href").replace("/", "");
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div id='header' className={`${s.container}`}>
       <header className={`container ${s.header}`}>
@@ -71,7 +84,8 @@ const Header = () => {
                   <li key={name}>
                     <Link
                       href={isHome ? href : "/" + href}
-                      onClick={() => {
+                      onClick={(e) => {
+                        scrollSmooth(e);
                         setIsOpen(false);
                       }}
                     >
