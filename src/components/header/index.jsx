@@ -94,26 +94,6 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-              <div className={s.menu__bottom}>
-                <div className={s["menu__bottom--item"]}>
-                  <p>Rua Fiandeiras, 306 - cj 102</p>
-                  <p> Vila Olimpia</p>
-                  <p>cep: 04545-001 São Paulo - SP</p>
-                </div>
-                <div className={s["menu__bottom--item"]}>
-                  <p>Contato</p>
-                  <a href={`tel:${PHONE}`}>(11) 99163 2603</a>
-                  <a href={`mailto:${EMAIL}`}>contato@dafneoliveira.com.br</a>
-                </div>
-                <div className={`${s.menu__item} ${s.socials}`}>
-                  <a href={INSTA_LINK} target='_blank' rel='noreferrer'>
-                    <Image src={insta} alt='Instagram' />
-                  </a>
-                  <a href={WHATS_LINK} target='_blank' rel='noreferrer'>
-                    <Image src={whats} alt="What's app" />
-                  </a>
-                </div>
-              </div>
             </nav>
           )}
         </div>

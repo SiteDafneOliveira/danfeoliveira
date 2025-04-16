@@ -66,43 +66,4 @@
       letter-spacing: 0%;
     }
   }
-
-  .menu__bottom {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 1.75rem;
-
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5; // 24px / 16px = 1.5rem
-    color: #fff;
-
-    p {
-      margin: 0;
-      padding: 0;
-    }
-
-    .menu__bottom--item {
-      min-width: 250px;
-      display: flex;
-      flex-direction: column;
-
-      a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: 400;
-        font-size: 1rem; // 16px
-        line-height: 1.5; // 24px / 16px = 1.5rem
-        letter-spacing: 0%;
-      }
-    }
-
-    .socials {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 1.75rem; // 28px
-    }
-  }
 }
