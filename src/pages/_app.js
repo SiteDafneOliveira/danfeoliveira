@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Instituto Dafne Oliveira</title>
         <meta
           name='description'
           content='Rumo a suamelhor versão Nosso maior objetivo é te ajudar aatingir o melhor de você mesmo,de maneira estratégica, individualizada,equilibrada e saudável.'

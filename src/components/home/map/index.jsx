@@ -11,12 +11,14 @@ const Where = () => {
         width={1500}
         height={595}
         metaWheelZoom
+        suppressHydrationWarning
       >
         <Marker
           width={50}
           anchor={[-23.596756925795674, -46.67685436332249]}
           color='#BEAB56'
           onClick={() => window.open(GOOGLE_MAPS, "_blank")}
+          suppressHydrationWarning
         />
       </Map>
     </div>
