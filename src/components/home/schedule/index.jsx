@@ -11,7 +11,7 @@ const Schedule = () => {
           personalizada.
         </h2>
         <a href={WHATS_LINK} className={`${s.btn} ${homeS.btn}`}>
-          WHATSAPP
+          AGENDAR CONSULTA
         </a>
       </div>
     </div>
