@@ -1,18 +1,18 @@
 .institute {
-  background-image: url("../../../assets/IDO_marca_dagua.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left center;
+  background-color: #938e9850;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  min-height: 550px;
   padding: 80px 0;
 
   @media only screen and (max-width: 992px) {
     background-size: cover;
     background-position: center;
   } // @media only screen and (max-width : 992px)
+
+  & div {
+    max-width: 1000px;
+  }
 }
 
 .title {
@@ -29,12 +29,11 @@
 }
 
 .content {
-  max-width: 530px;
 
   font-weight: 300;
   font-size: 1rem;
   line-height: 2; // 32px / 16px
-  color: #7B7B7B;
+  color: #5b5b5b;
 
   @media only screen and (max-width: 992px) {
     width: 100%;

@@ -2,8 +2,8 @@ import s from "./mappingMethod.module.scss";
 
 const MappingMethod = () => {
   return (
-    <div className={`${s.institute} container`} id="clinica">
-      <div>
+    <div className={`${s.institute} `} id="clinica">
+      <div className="container">
         <h2 className={s.title}>MÉTODO DE MAPEAMENTO DO SEU BIOTOPO</h2>
         <p className={s.content}>
           Utilizo um método exclusivo de mapeamento de biotipo, que une ciência
