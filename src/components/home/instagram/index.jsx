@@ -5,17 +5,24 @@ import insta4 from "@/assets/insta/ebook4.png";
 import { INSTA_LINK } from "@/utils/links";
 import Image from "next/image";
 import s from "./instagram.module.scss";
+import { useRef } from "react";
+import useOnScreen from "@/utils/useOnScreen";
 
 const Instagram = () => {
+  const leftRef = useRef(null);
+  const isLeftVisible = useOnScreen(leftRef);
+  const rightRef = useRef(null);
+  const isRightVisible = useOnScreen(rightRef);
+
   return (
     <div className={`container ${s.insta}`}>
-      <div className={s.left}>
+      <div ref={leftRef} className={`${s.left} ${isLeftVisible ? s.visible : ""}`}>
         <p className={s.text}>@nutridafne</p>
         <a href={INSTA_LINK} className={s.btn}>
           SEGUIR
         </a>
       </div>
-      <div className={s.right}>
+      <div ref={rightRef} className={`${s.right} ${isRightVisible ? s.visible : ""}`}>
         <Image
           className={s.img}
           src={insta1}
