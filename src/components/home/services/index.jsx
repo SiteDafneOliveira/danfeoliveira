@@ -1,11 +1,21 @@
 import doc from "@/assets/dafne4.png";
+import useOnScreen from "@/utils/useOnScreen";
 import Image from "next/image";
+import { useRef } from "react";
 import s from "./services.module.scss";
 
 const Services = () => {
+  const leftRef = useRef(null);
+  const rightRef = useRef(null);
+  const isLeftVisible = useOnScreen(leftRef);
+  const isRightVisible = useOnScreen(rightRef);
+
   return (
-    <div className={`container ${s.doc}`} id="servicos">
-      <div className={s.left}>
+    <div className={`container ${s.doc}`} id='servicos'>
+      <div
+        ref={leftRef}
+        className={`${s.left} ${isLeftVisible ? s.visible : ""}`}
+      >
         <h2 className={s.title}>SERVIÇOS</h2>
         <p className={s.text}>
           Além da consulta nutricional individualizada e pacotes de
@@ -25,7 +35,10 @@ const Services = () => {
           personalizados, com foco em resultado e prevenção.
         </p>
       </div>
-      <div className={s.right}>
+      <div
+        ref={rightRef}
+        className={`${s.right} ${isRightVisible ? s.visible : ""}`}
+      >
         <Image
           src={doc}
           alt='doctor'

@@ -10,9 +10,35 @@
   } // @media only screen and (max-width : 992px )
 }
 
+@keyframes left-to-right {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right-to-left {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .left {
   max-width: 530px;
   width: 50%;
+
+  &.visible {
+    animation: left-to-right 1s ease-in-out;
+  }
 
   @media only screen and (max-width: 992px) {
     width: 100%;
@@ -65,6 +91,10 @@
 
 .right {
   width: 50%;
+
+  &.visible {
+    animation: right-to-left 1s ease-in-out;
+  }
 
   @media only screen and (max-width: 992px) {
     width: 100%;
