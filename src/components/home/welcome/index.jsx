@@ -95,13 +95,13 @@ const Welcome = () => {
           ref={imgLeftRef}
           src={dafne2}
           alt='Dafne Oliveira'
-          className={isImgLeftVisible ? s.visible__left : ""}
+          className={isImgLeftVisible && width > 768 ? s.visible__left : ""}
         />
         <Image
           ref={imgRightRef}
           src={dafne3}
           alt='Dafne Oliveira'
-          className={isImgRightVisible ? s.visible__right : ""}
+          className={isImgRightVisible && width > 768 ? s.visible__right : ""}
         />
       </div>
     </div>
