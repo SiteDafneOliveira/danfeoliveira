@@ -1,8 +1,43 @@
+@keyframes typing {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes left-to-right {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right-to-left {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.welcome {
+  &.visible {
+    animation: typing 1s ease-in-out;
+  }
+}
+
 .content {
   font-weight: 300;
   font-size: 1rem;
   line-height: 2;
-  color: #7B7B7B;
+  color: #7b7b7b;
 
   &__container {
     margin: 80px auto;
@@ -13,7 +48,7 @@
     font-weight: 700;
     font-size: 1.25rem; // 20px
     line-height: 1.5; // 32px / 20px = 1.6
-    color: #BEAB56;
+    color: #beab56;
   }
 
   &__btn {
@@ -22,12 +57,11 @@
     margin: 4px auto 0;
     background-color: transparent;
     border: none;
-    
-    color: #BEAB56;
+
+    color: #beab56;
     font-size: 1rem; // 16px
     line-height: 2.5; // 40px / 16px = 2.5
     font-weight: 600;
-
   }
 }
 
@@ -37,6 +71,16 @@
   gap: 50px;
   overflow-x: hidden;
   margin-bottom: 80px;
+
+  .visible {
+    &__left {
+      animation: left-to-right 1s ease-in-out;
+    }
+
+    &__right {
+      animation: right-to-left 1s ease-in-out;
+    }
+  }
 
   & img {
     width: 500px;

@@ -1,8 +1,9 @@
 import dafne2 from "@/assets/welcome/dafne2.png";
 import dafne3 from "@/assets/welcome/dafne3.png";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import s from "./welcome.module.scss";
+import useOnScreen from "@/utils/useOnScreen";
 
 const content1 = (
   <>
@@ -49,6 +50,12 @@ const content2 = (
 const Welcome = () => {
   const [width, setWidth] = useState(0);
   const [showAll, setShowAll] = useState(false);
+  const contentRef = useRef(null);
+  const isContentVisible = useOnScreen(contentRef);
+  const imgLeftRef = useRef(null);
+  const imgRightRef = useRef(null);
+  const isImgLeftVisible = useOnScreen(imgLeftRef);
+  const isImgRightVisible = useOnScreen(imgRightRef);
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -58,7 +65,13 @@ const Welcome = () => {
   }, []);
 
   return (
-    <div className={`${s.welcome} ${width > 768 ? "container" : ""}`} id="dr-dafne">
+    <div
+      ref={contentRef}
+      className={`${s.welcome} ${width > 768 ? "container" : ""} ${
+        isContentVisible ? s.visible : ""
+      }`}
+      id='dr-dafne'
+    >
       <div
         className={`${s.content__container} ${width > 768 ? "" : "container"}`}
       >
@@ -78,8 +91,18 @@ const Welcome = () => {
         </button>
       </div>
       <div className={s.images}>
-        <Image src={dafne2} alt='Dafne Oliveira' />
-        <Image src={dafne3} alt='Dafne Oliveira' />
+        <Image
+          ref={imgLeftRef}
+          src={dafne2}
+          alt='Dafne Oliveira'
+          className={isImgLeftVisible ? s.visible__left : ""}
+        />
+        <Image
+          ref={imgRightRef}
+          src={dafne3}
+          alt='Dafne Oliveira'
+          className={isImgRightVisible ? s.visible__right : ""}
+        />
       </div>
     </div>
   );
