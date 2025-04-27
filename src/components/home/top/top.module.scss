@@ -6,6 +6,28 @@
   overflow-x: hidden;
 }
 
+@keyframes left-to-right {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right-to-left {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -15,6 +37,7 @@
   .right {
     max-width: 50%;
     margin-top: -80px;
+    animation: left-to-right 1s ease-in-out;
 
     & img {
       max-width: 100%;
@@ -27,6 +50,7 @@
     max-width: 500px;
     display: flex;
     flex-direction: column;
+    animation: right-to-left 1s ease-in-out;
 
     h1 {
       font-weight: 400;
