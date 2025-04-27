@@ -1,9 +1,14 @@
+import { useRef } from "react";
 import s from "./mappingMethod.module.scss";
+import useOnScreen from "@/utils/useOnScreen";
 
 const MappingMethod = () => {
+  const ref = useRef(null);
+  const isVisible = useOnScreen(ref);
+
   return (
-    <div className={`${s.institute} `} id="clinica">
-      <div className="container">
+    <div ref={ref} className={`${s.institute} ${isVisible ? s.visible : ""}`} id='clinica'>
+      <div className='container'>
         <h2 className={s.title}>MÉTODO DE MAPEAMENTO DO SEU BIOTOPO</h2>
         <p className={s.content}>
           Utilizo um método exclusivo de mapeamento de biotipo, que une ciência
