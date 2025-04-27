@@ -6,11 +6,26 @@
   background-repeat: no-repeat;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
 .container {
   display: flex;
   gap: 18rem; // 288px
   justify-content: center;
   align-items: center;
+
+  &.visible {
+    animation: fadeIn 1s ease-in-out;
+  }
 
   @media only screen and (max-width : 1200px) {
     gap: 8rem; // 160px

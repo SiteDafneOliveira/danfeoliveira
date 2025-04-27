@@ -2,13 +2,18 @@ import definidas from "@/assets/programs/definidas.svg";
 import nutriHighPerformance from "@/assets/programs/nutri-high-performance.svg";
 import homeS from "@/styles/Home.module.css";
 import { NUTRI_HIGH_PERFORMANCE, PROGRAMA_DEFINIDAS } from "@/utils/links";
+import useOnScreen from "@/utils/useOnScreen";
 import Image from "next/image";
+import { useRef } from "react";
 import s from "./programs.module.scss";
 
 const Programs = () => {
+  const ref = useRef(null);
+  const isVisible = useOnScreen(ref);
+
   return (
-    <div className={s.programs}>
-      <div className={`container ${s.container}`}>
+    <div className={`${s.programs} ${isVisible ? s.visible : ""}`}>
+      <div ref={ref} className={`container ${s.container} ${isVisible ? s.visible : ""}`}>
         <div className={s.item}>
           <p className={s.img}>
             <Image src={definidas} alt='definidas' width={72} height={99} />
