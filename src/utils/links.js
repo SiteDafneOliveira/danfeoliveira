@@ -6,9 +6,9 @@ const PHONE = '11991632603'
 
 const GOOGLE_MAPS = "https://maps.app.goo.gl/Y3eGReaU52Puw2VMA";
 
-const PROGRAMA_DEFINIDAS = "";
+const PROGRAMA_DEFINIDAS = "https://www.definidas.com.br/";
 
-const NUTRI_HIGH_PERFORMANCE = "";
+const NUTRI_HIGH_PERFORMANCE = "https://www.nutrihighperformance.com.br/";
 
 const EMAIL = "contato@dafneoliveira.com.br"
 
