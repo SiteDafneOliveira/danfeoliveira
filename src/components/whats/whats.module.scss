@@ -1,0 +1,16 @@
+.whats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #42c65f;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  cursor: pointer;
+}
